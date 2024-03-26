@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    &out OUT_BLE;
+    // &out OUT_BLE;
   
     behaviors {
         rgb_encoder: rgb_encoder {
@@ -50,10 +50,10 @@
              // | _      |  _    |  _    |
              // --------------------------
              bindings = <
-                 &bt BT_CLR      &kp HOME &kp PG_UP
-                 &trans          &kp END  &kp PG_DN
-                 &trans          &trans   &trans
-                 &rgb_ug RGB_TOG &trans   &trans
+                 &bt BT_CLR       &kp HOME      &kp PG_UP
+                 &trans           &kp END       &kp PG_DN
+                 &trans           &trans        &trans
+                 &rgb_ug RGB_TOG  &out OUT_BLE  &trans
              >;
 
             sensor-bindings = <&rgb_encoder>;
