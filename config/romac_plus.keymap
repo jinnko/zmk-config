@@ -54,13 +54,13 @@
              // | _      |  _    |  _    |
              // --------------------------
              bindings = <
-                 &bt BT_CLR         &kp HOME      &kp PG_UP
-                 &trans             &kp END       &kp PG_DN
-                 &unicode_capricorn &trans        &trans
-                 &kp K_MUTE         &out OUT_BLE  &trans
+                 &bt BT_CLR   &kp HOME      &kp PG_UP
+                 &trans       &kp END       &kp PG_DN
+                 0x102651     &trans        &trans
+                 &kp K_MUTE2  &out OUT_BLE  &trans
              >;
 
-            sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp K_VOL_UP2 K_VOL_DN2>;
          };
     };
 };
