@@ -19,7 +19,7 @@
               &kp KP_N7   &kp KP_N8  &kp KP_N9
               &kp KP_N4   &kp KP_N5  &kp KP_N6
               &kp KP_N1   &kp KP_N2  &kp KP_N3
-              &kp C_MUTE  &mo 2      &mo 1
+              &kp F20     &mo 2      &mo 1
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -30,7 +30,7 @@
                  &kp LANG4    &kp F13       &kp F14
                  &kp INT4     &kp INT5      &kp LANG3
                  &kp LANG1    &kp INT2      &kp LANG2
-                 &kp K_MUTE2  &out OUT_BLE  &trans
+                 &kp C_MUTE   &out OUT_BLE  &trans
              >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_UP2 K_VOL_DN2>;
@@ -41,10 +41,10 @@
             //
             // XF86Launch7 XF86Launch8 XF86Launch9
              bindings = <
-                 &kp F22     &kp F23      &trans
-                 &trans      &kp F20      &kp F21
-                 &kp F16     &kp F17      &kp F18
-                 &kp K_MUTE2 &trans       &trans
+                 &kp KP_NUMLOCK   &kp C_RED    &kp C_GREEN
+                 &kp F21          &kp F22      &kp F23
+                 &kp F16          &kp F17      &kp F18
+                 &kp K_MUTE2      &trans       &trans
              >;
 
             sensor-bindings = <&inc_dec_kp K_VOL_UP2 K_VOL_DN2>;
